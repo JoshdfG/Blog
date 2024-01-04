@@ -14,10 +14,14 @@ app.get('/', (req, res) => {
 app.get("/about", (req,res)=>{
   res.render('about', {title:"About"} )
 })
+app.get("/blogs/create",(req,res)=>{
+  res.render("create", {title:"Create a new blog"})
+})
 
 app.use((req,res)=>{
-  res.status(404).render('404', {title:"404"})
+  res.status(404).render('404',{title:"404"})
 })
+
 // Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
