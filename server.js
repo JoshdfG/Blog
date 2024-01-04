@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 // // app.use(express.static('src'));
 // app.set("views",path.join(__dirname,"views")); 
 
-app.use('/public', express.static("public"))
+app.use(express.static("public"))
 // Define a route to render your EJS file
 app.get('/', (req, res) => {
   res.render('index'); // Replace 'index' with your EJS file name (without the extension)
