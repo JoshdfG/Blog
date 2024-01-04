@@ -4,6 +4,7 @@ const app = express();
 const path = require("path")
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
+app.listen(5000)
 
 app.use(express.static("public"))
 // Define a route to render your EJS file
@@ -22,8 +23,3 @@ app.use((req,res)=>{
   res.status(404).render('404',{title:"404"})
 })
 
-// Start the server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
