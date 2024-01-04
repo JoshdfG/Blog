@@ -82,6 +82,10 @@ hr {
   border-top-width: 1px;
   /* 3 */
 }
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
 
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.

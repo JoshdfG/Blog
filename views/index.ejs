@@ -4,14 +4,24 @@
   <%-include ('./partials/header.ejs')%>
 <body>
   <!-- Your EJS content using Tailwind CSS classes -->
-  <div class="bg-gray-200 text-blue-500 text-center p-4">
-    <h1 class="text-xs font-bold uppercase underline mx-auto">Hello, tailbitch!</h1>
-    
-    <!-- ... -->
-  </div>
-  <div class=" ">
-    <h1 class="text-center font-bold underline my-4">Hello People</h1>
-      <p class=" mx-auto px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit eos praesentium ipsum quibusdam error tenetur, hic totam maxime optio animi quasi soluta et at ratione unde sequi. Et, inventore vel!</p>
+  <header  class=" bg-gray-200 flex align-middle justify-center " > 
+    <nav class="text-blue-900 container flex align-middle justify-between p-4">
+    <div >
+      <h1 class="font-bold uppercase  mx-auto">Z_<span class="text-orange-600">Breed</span>  
+      </h1>
+    </div>
+    <!-- nav -->
+    <div class="flex space-x-4 list-none">
+      <li><a class="hover:text-blue-600 transition-all duration-500 ease-in-out" href="/">Blogs</a></li>
+      <li><a class="hover:text-blue-600 transition-all duration-500 ease-in-out" href="/about">About</a></li>
+      <li><a class="hover:text-blue-600 transition-all duration-500 ease-in-out" href="/blogs/create">New Blogs</a></li>
+    </div>
+  </nav>
+</header>
+ 
+
+  <div class="text-center mt-4">
+      <button class="bg-blue-950 hover:scale-105 p-2 text-white rounded-md hover:bg-blue-800 transition-all duration-500 ease-in-out">Click Me</button>
     </div>
 </body>
 </html>
