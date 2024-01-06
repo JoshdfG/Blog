@@ -4,6 +4,26 @@
 <body>
   <!-- Your EJS content using Tailwind CSS classes -->
   <%-include ('./partials/navbar.ejs')%>
- Create a new blog
+  <p class="font-bold text-xl text-center">Create a new blog</p>
+  <div class="border-2 rounded-lg mx-auto border-black w-[10%]"></div>
+  <div class=" container">
+    <form action="/create-post" method="POST"> <!-- Adjust 'action' and 'method' attributes accordingly -->
+      <label for="title">Blog title:</label>
+      <input type="text" id="title" name="title" required> 
+    
+      <label for="snippet">Blog snippet:</label>
+      <input type="text" id="snippet" name="snippet" required>
+    
+      <label for="body">Blog body:</label>
+      <textarea id="body" name="body" required></textarea>
+    
+      <button type="submit">Create Post</button>
+    </form>
+    
+      
+      <button class="bg-blue-950 hover:scale-105 p-2 text-white rounded-md hover:bg-blue-800 transition-all duration-500 ease-in-out">Click Me</button>
+  
+  </div>
+
 </body>
 </html>
