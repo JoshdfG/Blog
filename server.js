@@ -9,6 +9,7 @@ app.listen(5000)
 app.use(express.static("public"))
 // Define a route to render your EJS file
 app.get('/', (req, res) => {
+  // blogs
   const blogs=[ 
     {title: 'Yoshi finds eggs', snippet:'Lorem ipsum dolor sit amet consectetur adipisicing elit'},
     {title: 'Mario finds stars', snippet:'Lorem ipsum dolor sit amet consectetur adipisicing elit'},
